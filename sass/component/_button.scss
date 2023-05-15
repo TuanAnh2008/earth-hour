@@ -1,0 +1,70 @@
+
+
+.btn-primary{
+//  &:link,
+//  &:visited {
+    text-transform: uppercase;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 2.2rem;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 0.9rem 4rem;
+    text-align: center;
+    transition: $transition-3;
+    display: inline-block;
+   // }
+   
+   &--1 {
+      background: linear-gradient(125deg ,$color-tertiary 50%, $color-secondary 50%);
+      background-size: 240%;
+      color: $color-secondary;
+      &:hover {
+         animation: scaleDown 0.3s forwards;
+         animation-delay: 0.8s;
+      background-position: 100%;
+      color: $color-tertiary;
+    }
+ }
+
+ &--2 {
+   background: linear-gradient(125deg , transparent 50%, $color-tertiary 50%);
+   background-size: 240%;
+   border: 2px solid $color-tertiary;
+   color: $color-secondary;
+   &:hover {
+     background-position: 100%;
+     color: $color-primary;
+   }
+}
+
+&--3 {
+   background: linear-gradient(125deg ,$color-tertiary 50%, $color-tertiary 50%);
+   background-size: 240%;
+   color: $color-secondary;
+   &:hover {
+      animation: scaleDown 0.3s forwards;
+      animation-delay: 0.8s;
+   background-position: 100%;
+   color: $color-secondary;
+ }
+}
+}
+
+.btn-show-more {
+      display: inline-block;
+      border-radius: 20px;
+      box-shadow: 0.3rem 0.6rem 0 rgba($color-secondary, 0.1);
+      padding: 1rem 2.4rem;
+      font-size: 1.2rem;
+      // text-decoration: none;
+      cursor: pointer;
+      background-color: $color-secondary;
+      color: $color-primary;
+      margin-top: 3rem;
+
+      @include respond(tab-land) {
+         font-size: 1.5rem;
+      }
+   
+}

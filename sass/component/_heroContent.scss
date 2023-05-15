@@ -1,0 +1,23 @@
+
+.hero {
+    &__content {
+        @extend %abs-center;
+        text-align: center;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    
+    &__name {
+        font-size: 4rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+    }
+
+    &__title {
+        margin-top: 1rem;
+        font-size: 1.9rem;
+    }
+}

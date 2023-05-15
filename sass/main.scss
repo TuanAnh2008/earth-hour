@@ -1,0 +1,39 @@
+
+//  MAIN
+/*
+Component: sign up, school list, small content - if not first child then will have border in the top, card
+header,footer
+u-margin-small, u-margin-medium, u-margin-big, u-margin-huge (bottomm)
+header - sticky
+blog-list
+// content: max-width: 1200px, 
+// sub-footer (đi kèm footer)
+*/
+
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixin';
+@import 'abstracts/extend';
+@import 'abstracts/function';
+
+// Base
+@import 'base/base';
+@import 'base/ultilities';
+@import 'base/typography';
+@import 'base/animation';
+
+// Component
+@import 'component/button';
+@import 'component/signUp';
+@import 'component/card';
+@import 'component/heroContent';
+@import 'component/toastMsg';
+
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+
+// Pages
+@import 'pages/home'

@@ -1,0 +1,135 @@
+
+@mixin heading-uppercase($size) {
+    font-size: $size;
+    line-height: $size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+@mixin heading-border-bottom($size) {
+    font-size: $size;
+    padding: 0 0 2.2rem;
+    margin: 0 0 1.3rem;
+    position: relative;
+    display: inline-block;
+    &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        display: inline-block;
+        width: 3rem;
+        height: 0.5rem;
+        background-color: $color-tertiary;
+    }
+}
+
+// CARD
+@mixin card-content-position($content-position) {
+    @if $content-position == 'right' {       
+    position: absolute;
+    top: 5%;
+    right: -3%;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    font-weight: 900;
+    color: $color-tertiary;
+    text-transform: uppercase;
+    background-color: $color-secondary;
+    box-shadow: 0rem 1.5rem 3.5rem #000;
+    @include respond(tab-port) {
+        display: none;
+    }
+    &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        bottom: -53%;
+        border: 10px solid $color-tertiary;
+        border-color: $color-tertiary transparent transparent $color-tertiary;
+        @include respond(tab-land) {
+           display: none;
+            }
+    }
+    }
+
+    @if $content-position == 'left' {
+        position: absolute;
+        top: 5%;
+        left: -3%;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        font-weight: 900;
+        color: $color-tertiary;
+        text-transform: uppercase;
+        background-color: $color-secondary;
+        box-shadow: 0rem 1.5rem 3.5rem #000;
+        @include respond(tab-port) {
+            display: none;
+        }
+        &::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            bottom: -53%;
+            transform: rotate(90deg);
+            border: 10px solid $color-tertiary;
+            border-color: $color-tertiary transparent transparent $color-tertiary;
+            @include respond(tab-land) {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px: phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet landscape
+[1200-1800] is where our normal styles apply
+1800px + : Big dekstop
+*/
+
+
+// @mixin respond-phone {
+//     @media (max-width: 600px) { @content };
+// }
+
+
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-dekstop
+*/
+
+// ORDER: Base + typography > general layout + grid > page layout > components
+
+@mixin respond($breakpoint) {
+    
+    @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) { @content }; // 600px
+    }
+    
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 50em) { @content }; // 800px
+    }
+    
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content }; // 1200px
+    }
+
+
+    @if $breakpoint == big-dekstop {
+     @media only screen and (min-width: 112.5em) { @content }; // 1800
+    }
+}
+

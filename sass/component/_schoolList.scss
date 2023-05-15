@@ -1,0 +1,38 @@
+
+.school {
+
+    &-list{
+        margin-top: 1.7rem;
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        padding: 0 $normal-padding-2-side;
+        flex-wrap: wrap;
+        justify-content: center;
+  }
+    &-item{
+        // width: 10%;
+        padding: 1.6rem;
+        width: 17rem;
+        min-height: 17rem;
+        background-color: $color-secondary;
+        box-shadow: 0 1rem 1.5rem rgba($color-secondary, 0.2);
+  }
+    &-item__img{
+        object-fit: cover;
+        width: 11.6rem;
+        height: 9.5rem;
+  }
+    &-item__name{
+        font-weight: 600;
+        color: $color-primary;
+        font-size: 1.4rem;
+        margin-top: 1.2rem;
+  }
+  }
+
+  // SCHOOL LIST COMPONENT
+  .content__school-join {
+    width: 100%;
+    text-align: center;
+}

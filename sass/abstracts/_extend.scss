@@ -1,0 +1,23 @@
+
+
+// FLEX
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// ABSOLUTE
+%abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

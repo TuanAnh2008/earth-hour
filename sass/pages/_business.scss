@@ -1,0 +1,28 @@
+
+// The code in business page and content is the same as community so i dont change the name of the class
+
+
+.hero {
+  position: relative;
+    background: linear-gradient(#004bff, #004bff), url(../src/img/sub-bckg-3.jpg);
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    min-height: 35rem;
+}
+
+.content {
+    &__community-list{
+        
+  }
+    &__community-item{
+        margin: 0.8rem 0;
+        line-height: 1.6;
+        margin-left: 1.2rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: left;
+        font-weight: 500;
+  }
+  }
+

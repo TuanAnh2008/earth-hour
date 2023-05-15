@@ -1,0 +1,109 @@
+
+
+.footer {
+    &__top{
+      padding-top: 5rem;
+    background-color: #121317;
+
+    
+    @include respond(tab-port) {
+      padding-left: 2rem;
+  }
+}
+  &__top-wrapper{
+    display: flex;
+    width: 100%;
+    padding: 1.5rem 0;
+}
+&__nav{
+    align-items: normal;
+    flex: 1;
+    display: flex;
+    gap: 9rem;
+
+    @include respond(tab-land) {
+      display: none;
+    }
+}
+  &__nav-list{
+    list-style: none;
+    text-align: left;
+}
+  &__nav-heading{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: $color-tertiary-dark;
+    margin-bottom: 1rem;
+}
+  &__nav-item{
+    &:not(:last-child) {
+        margin-bottom: 0.7rem;
+    }
+}
+  &__nav-item-link{
+    display: inline-block;
+    font-size: 1.7rem;
+    color: $sub-color;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+     color: $color-secondary; 
+    }
+}
+
+  &__contact{
+
+}
+  &__contact-list{
+    list-style: none;
+    text-align: left;
+    &:not(:last-child) {
+        margin-bottom: 2.6rem;
+    }
+}
+  &__contact-heading{
+    margin-bottom: 0.4rem;
+    color: $sub-color;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+  &__contact-item{
+    &:not(:last-child) {
+        margin-bottom: 0.7rem;
+    }
+}
+  &__contact-item-icon{
+    color: $sub-color;
+    font-size: 1.3rem;
+    margin-right: 0.7rem;
+}
+  &__contact-item-link{
+    display: inline-block;
+    text-decoration: none;
+    color: $sub-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+  &__social{
+    font-size: 2rem;
+    display: inline-block;
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+}
+&__social-link{
+    color: $color-tertiary-dark;    
+
+}
+
+  &__bottom{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5rem 0;
+}
+}
+

@@ -1,0 +1,163 @@
+.sign-up {
+    padding: 2.5rem;
+    background-color: $sign-up-color;
+
+    @include respond(tab-land) {
+      margin: 2rem 0;
+    }
+    &__heading{
+    @include heading-uppercase(3.6rem);
+    margin: 0px 0px 1.5rem;
+    }
+    &__title{
+     font-size: 2rem;
+    font-weight: 400;
+  }
+
+
+  .form {
+    padding: 1.5rem 0;
+      &-group{
+        display: inline-block;
+        margin-right: 0.8rem;
+        width: 48%;
+        padding-top: 1rem;
+        position: relative;
+
+        #inp-file {
+          width: 98%;
+        }
+
+        #inp-name-work {
+          width: 98%;
+        }
+
+        @include respond(tab-land) {
+     
+
+          @include respond(phone) {
+            width: 100%;
+        }
+        }
+      
+
+        &--block {
+            display: block;
+            width: 100%;
+        }
+
+        &__label {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+
+            @include respond(tab-land) {
+              margin-bottom: 0.5rem;
+            }
+        }
+
+        &__inp {
+            color: $color-secondary;
+            outline: none;
+            border: none;
+            font-family: inherit;
+            width: 100%;
+            border-radius: 3px;
+            font-size: 1.9rem;
+            padding: 1rem;
+            background-color: #2d2d2e;
+
+            &--select > * {
+                color: #2d2d2e;
+                background-color: $color-secondary;
+            }
+
+            &--file::-webkit-file-upload-button {
+                visibility: hidden;
+            }
+
+            &--file {
+                margin: 1rem 0;
+                border: 2px solid $color-secondary;
+                font-size: 0;
+            }
+
+            &--file::before {
+                content: 'Choose a file... (Max 1Mb)';
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    @include respond(tab-land) {
+      & > .btn-primary:link,
+      & > .btn-primary:visited
+      {
+        width: 97%;
+        margin-top: 1.3rem;
+      }
+    }
+
+    @include respond(phone) {
+      & > .btn-primary:link,
+      & > .btn-primary:visited
+      {
+        width: 100%;
+        margin-top: 1.1rem;
+      }
+    }
+
+    &-preview-image {
+      margin: 2rem 0;
+      width: 20rem;
+      height: 20rem;
+      border: 2px solid $color-secondary;
+      object-fit: cover;
+    }
+
+    #form-preview-message {
+      color: #f52828;
+      font-size: 2rem;
+      margin: 1.4rem 0;
+    }
+  }
+
+  &__user-number {
+    color: $color-tertiary;
+    @include heading-uppercase(6.9rem);
+  }
+
+  &__user-number-sp {
+    font-size: 3.2rem;
+    margin-top: 0.4rem;
+  }
+}
+
+.box-error {
+  z-index: 3;
+  background-color: #f52828;
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: -70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  min-width: 15rem;
+  text-align: center;
+  &::after {
+    content: '';
+    display: inline-block;
+    border-color: #f52828 transparent transparent #f52828;
+    border-style: solid;
+    border-width: 10px;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    border-radius: 3px;
+  }
+  display: none;
+}

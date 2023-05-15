@@ -1,0 +1,84 @@
+
+.hero {
+    position: relative;
+      background: linear-gradient(#004bff, #004bff), url(../src/img/sub-bckg-7.jpg);
+      background-blend-mode: soft-light;
+      background-position: center;
+      background-size: cover;
+      min-height: 35rem;
+  } 
+
+  .media {
+    &__row-left  {
+        width: 60%; 
+
+        @include respond(tab-land) {
+            width: 100%;
+        }
+    }
+
+    &__row-right {
+        width: 40%;
+        padding: 0 2rem;
+
+        @include respond(tab-land) {
+            padding: 1.3rem 0;
+            order: -1;
+            width: 100%;
+        }
+    }
+
+    &__img-btn:link,
+    &__img--btn:visited
+    {
+        font-size: 1.5rem;
+    }
+
+    &__gallery {
+        max-width: 70rem;
+        max-height: 20rem;
+        margin: 2rem 0 2.8rem 0;
+        &-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__row {
+        flex-direction: row;
+
+        @include respond(tab-land) {
+            flex-direction: column;
+        }
+    }
+
+    &__download {
+        &-logo {
+            cursor: pointer;
+            object-fit: cover;
+            width: 67rem;
+            height: 34rem;
+
+            @include respond(tab-land) {
+                width: 45rem;
+                height: 22rem;
+            }
+        }
+
+        &-btn:link,
+        &-btn:visited {
+            font-size: 1.5rem;
+        }
+
+        &-img {
+            cursor: pointer;
+        }
+    }
+
+    &__alert-btn:link,
+    &__alert-btn:visited {
+        font-size: 1.5rem;
+    }
+}
+

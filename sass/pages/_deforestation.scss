@@ -1,0 +1,15 @@
+
+.hero {
+    position: relative;
+      background: linear-gradient(#004bff, #004bff), url(../src/img/sub-bckg-6.jpg);
+      background-blend-mode: soft-light;
+      background-position: center;
+      background-size: cover;
+      min-height: 35rem;
+  }
+
+.content {
+    &__deforestation-wrapper {
+        margin-top: 4rem;
+    }
+}

@@ -1,0 +1,67 @@
+
+.hero {
+    position: relative;
+    background: linear-gradient(#004bff, #004bff), url(../src/img/sub-bckg-5.jpg);
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    min-height: 35rem;
+}
+
+
+.content {
+    &__blog-list{
+        // display: grid;
+        // grid-template-columns: 1fr;
+        // row-gap: 1rem;
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+  }
+  
+  &__blog-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+    &__blog-item{
+        min-height: 10rem;
+        display: flex;
+  }
+  
+  &__blog-item:hover &__blog-heading {
+    color: black;
+  }
+
+    &__blog-img{
+        // flex: 0 0 20%;
+        width: 15%;
+        object-fit: cover;
+
+        @include respond(phone) {
+          width: 30%;
+        }
+  }
+    &__blog-text{
+        padding: 1.5rem;
+        flex: 1;
+        background-color: $sub-color;
+  }
+    &__blog-heading{
+        transition: $transition-2;
+        color: $color-tertiary;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 0.8rem;
+  }
+    &__blog-title{
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    &__blog-date{
+        color: rgba($color-secondary, 0.8);
+  
+  }
+  }

@@ -1,0 +1,440 @@
+<div id="toast"></div>
+<header class="header">
+  <div class="header__left">  
+    <a href="/">
+      <img
+        src="./src/img/logo-header.png"
+        alt="Logo header"
+        class="header__logo"
+      />
+    </a>
+    <div class="header__date">
+      <h4 class="header__year">25 march 2023</h4>
+      <h4 class="header__time">8:30-9:30PM local time</h4>
+    </div>
+  </div>
+
+  <div class="header__right">
+    <div class="menu-icon-wrapper">
+      <i class="fa-solid fa-bars menu-icon"></i>
+    </div>
+    <div class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          Get Involved
+          <i class="fa-solid fa-caret-down header__icon"></i>
+          <div class="header__dropdown">
+            <ul class="header__dropdown-list">
+              <li class="header__dropdown-item">
+                <a href="/Get-Involved/schools" class="header__dropdown-link">Schools</a>
+              </li>
+              <li class="header__dropdown-item">
+                <a href="/Get-Involved/business" class="header__dropdown-link">Business</a>
+              </li>
+              <li class="header__dropdown-item">
+                <a href="/Get-Involved/community" class="header__dropdown-link">Community</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="header__item">
+          Discover
+          <i class="fa-solid fa-caret-down header__icon"></i>
+          <div class="header__dropdown">
+            <ul class="header__dropdown-list">
+              <li class="header__dropdown-item">
+                <a href="/Discover/take-time-out-for-nature" class="header__dropdown-link">Take Time Out For Nature</a>
+              </li>
+              <li class="header__dropdown-item">
+                <a href="/Discover/blogs" class="header__dropdown-link">Blogs</a>
+              </li>
+              <li class="header__dropdown-item">
+                <a href="/Discover/deforestation" class="header__dropdown-link">Deforestation</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="header__item">
+          About
+          <i class="fa-solid fa-caret-down header__icon"></i>
+          <div class="header__dropdown">
+            <ul class="header__dropdown-list">
+              <li class="header__dropdown-item">
+                <a href="/About/media" class="header__dropdown-link">Media & resources</a>
+              </li>
+              <li class="header__dropdown-item">
+                <a href="/About/opinion" class="header__dropdown-link">Opinion</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <a href="#" class="btn-primary btn-primary--1">Register</a>
+  </div>
+</header>
+
+<!--
+  - Hero
+-->
+<div class="hero"></div>
+
+<!--
+  - Content
+-->
+<div class="welcome">
+  <h1 class="heading-title">thank you for taking time out for nature</h1>
+</div>
+
+<div class="content">
+  <!-- content introduce -->
+  <div class="content__introduce">
+    <div class="row">
+      <div class="col-1-of-2">
+        <!-- Content Text -->
+        <div class="content__text">
+          <p class="content__text-el">
+            To celebrate Earth Hour 2023, we called on all Australians to
+            sign up to switch off and join a worldwide community of millions
+            taking #TimeOutForNature.
+          </p>
+          <p class="content__text-el">
+            We needed to take time out for our planet. Our environment
+            continues to degrade at an alarming pace. Eastern Australia is
+            among the 24 global deforestation fronts, and we are the only
+            developed nation on this list.
+          </p>
+          <p class="content__text-el">
+            An estimated 200,000 trees are bulldozed in Australia every day.
+            That’s 8,000 trees every hour.
+          </p>
+          <p class="content__text-el">
+            Trees are the lungs of our planet, and we need them to help
+            reverse the impacts of climate change. Earth Hour is the time to
+            press Pause and work together to protect nature and restore what
+            we have lost.
+          </p>
+          <p class="content__text-el">
+            Thank you for taking #TimeOutForNature this Earth Hour.
+          </p>
+        </div>
+
+        <!-- Australia -->
+        <div class="content__australia-travel">
+          <h3 class="content__australia-heading">
+            Join us as we take you to incredible locations across Australia!
+          </h3>
+          <p class="content__text-el">
+            To celebrate Earth Hour we released revealed 60 minutes of
+            stunning Slow TV. Watch it below.
+          </p>
+        </div>
+        <iframe
+        class="content__australia-video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/jnSIna_kBlM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="col-1-of-2">
+        <div class="sign-up">
+          <h2 class="sign-up__heading">Sign up for earth hour</h2>
+          <h4 class="sign-up__title">
+            Did you switch off for Earth Hour? Register your participation.
+          </h4>
+          <form class="form" action="">
+            <div class="form-group">
+              <label class="form-group__label" for="inp-first-name"
+                >First Name</label
+              >
+              <input
+                class="form-group__inp"
+                type="text"
+                id="inp-first-name"
+              />
+              <div class="box-error"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label" for="inp-last-name"
+                >Last name</label
+              >
+              <input
+                class="form-group__inp"
+                type="text"
+                id="inp-last-name"
+              />
+              <div class="box-error"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label" for="inp-email">Email</label>
+              <input class="form-group__inp" type="email" id="inp-email" />
+              <div class="box-error"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label" for="inp-phone">Phone</label>
+              <input class="form-group__inp" type="number" id="inp-phone" />
+              <div class="box-error"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label" for="inp-postcode"
+                >Postcode</label
+              >
+              <input class="form-group__inp" type="number" id="inp-postcode" />
+              <div class="box-error"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label" for="inp-select"
+                >I am an</label
+              >
+              <select
+                class="form-group__inp form-group__inp--select"
+                name="work"
+                id="inp-select"
+              >
+                <option value="Individual">Individual</option>
+                <option value="School">School</option>
+                <option value="Council">Council</option>
+                <option value="Business">Business</option>
+                <option value="Landmark">Landmark</option>
+                <option value="Organisation">Organisation</option>
+              </select>
+            </div>
+            <div class="form-group form-group--block">
+              <label class="form-group__label" for="inp-name-work"
+                >Name of the school</label
+              >
+              <input
+                class="form-group__inp"
+                type="text"
+                id="inp-name-work"
+              />
+              <div class="box-error"></div>
+            </div>
+            <div class="form-group form-group--block">
+              <label class="form-group__label" for="inp-file"
+                >Upload your logo here (Not mandatory)</label
+              >
+              <input
+                class="form-group__inp form-group__inp--file"
+                type="file"
+                id="inp-file"
+                title=" &nbsp;"
+              />
+              <img id="form-preview-image">
+              <p id="form-preview-message"></p>
+            </div>
+            <a href="#" class="btn-primary btn-primary--1 dis-block form-btn"
+              >Register</a
+            >
+          </form>
+
+          <h2 class="sign-up__user-number">18,641</h2>
+          <h4 class="sign-up__user-number-sp">lights out!</h4>
+          <h6 class="copyright">
+            By signing you accept WWF-Australia's Privacy Policy.
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card -->
+ <div class="card-container">
+  <div class="card">
+    <div class="row card__wrapper">
+      <!-- card -->
+      <div class="card__bckg-img card__bckg-img--1">&nbsp;</div>
+      <div class="card__content">
+        <h1 class="card__heading">Win a dream wilderness</h1>
+        <div class="card__decoration">
+          <span class="card__decoration-el">&nbsp;</span>
+          <span class="card__decoration-el">&nbsp;</span>
+          <span class="card__decoration-el">&nbsp;</span>
+          <span class="card__decoration-el">&nbsp;</span>
+        </div>
+        <p class="content__text-el">
+          To help Australians switch off and take time out in nature,
+          WWF-Australia and Tasmanian Walking Company are giving you the
+          chance to win a luxury walking holiday for two on the Bay of Fires
+          Lodge Walk.
+        </p>
+
+        <a href="#" class="btn-primary btn-primary--2">ENTER NOW</a>
+
+        <!-- Card keyword -->
+        <div class="card__keyword">Switch off and win</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row card__wrapper">
+      <!-- card -->
+
+      <div class="card__content">
+        <h1 class="card__heading">take timeout for a nature</h1>
+        <div class="card__decoration">
+          <span class="card__decoration-el">&nbsp;</span>
+          <span class="card__decoration-el">&nbsp;</span>
+          <span class="card__decoration-el">&nbsp;</span>
+          <span class="card__decoration-el">&nbsp;</span>
+        </div>
+        <p class="content__text-el">
+          Whether it's 60 seconds, 60 minutes or beyond the hour, we can all
+          take time for nature this Earth Hour.
+        </p>
+
+        <a href="#" class="btn-primary btn-primary--2">ENTER NOW</a>
+
+        <!-- Card keyword -->
+        <div class="card__keyword">Switch off and win</div>
+      </div>
+      <div class="card__bckg-img card__bckg-img--2">&nbsp;</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row card__wrapper">
+      <!-- card -->
+      <div class="card__bckg-img card__bckg-img--3">&nbsp;</div>
+      <div class="card__content">
+        <h1 class="card__heading">FROM DEFORESTATION TO FORESTATION</h1>
+        <div class="card__decoration">
+          <span class="card__decoration-el">&nbsp;</span>
+          <span class="card__decoration-el">&nbsp;</span>
+          <span class="card__decoration-el">&nbsp;</span>
+          <span class="card__decoration-el">&nbsp;</span>
+        </div>
+        <p class="content__text-el">
+          Learn more about why trees are the champions when it comes to
+          fighting climate change.
+        </p>
+
+        <a href="#" class="btn-primary btn-primary--2">learn more</a>
+
+        <!-- Card keyword -->
+        <div class="card__keyword">Switch off and win</div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+
+<!-- 
+ - Footer
+ -->
+<footer class="footer">
+  <div class="footer__top">
+  <div class="row">
+    <div class="copyright-wrapper">
+      <h6 class="copyright">
+        © 2023 Earth Hour. All right reserved Privacy Policy
+      </h6>
+    </div>
+    <div class="footer__top-wrapper">
+      <div class="footer__nav">
+        <ul class="footer__nav-list">
+          <h4 class="footer__nav-heading">Get Involved</h4>
+          <li class="footer__nav-item">
+            <a href="/Get-Involved/schools" class="footer__nav-item-link">Schools</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="/Get-Involved/business" class="footer__nav-item-link">Business</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="/Get-Involved/community" class="footer__nav-item-link">Community</a>
+          </li>
+        </ul>
+
+        <ul class="footer__nav-list">
+          <h4 class="footer__nav-heading">Discover</h4>
+          <li class="footer__nav-item">
+            <a href="/Discover/take-time-out-for-nature" class="footer__nav-item-link"
+              >Take Time Out For Natue</a
+            >
+          </li>
+          <li class="footer__nav-item">
+            <a href="/Discover/blogs" class="footer__nav-item-link">Blogs</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="/Discover/deforestation" class="footer__nav-item-link">Deforestation</a>
+          </li>
+        </ul>
+
+        <ul class="footer__nav-list">
+          <h4 class="footer__nav-heading">About</h4>
+          <li class="footer__nav-item">
+            <a href="/About/media" class="footer__nav-item-link">Media & resources</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="/About/opinion" class="footer__nav-item-link">Opinion</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <ul class="footer__contact-list">
+          <h4 class="footer__contact-heading">Contact us</h4>
+          <li class="footer__contact-item">
+            <i class="fa-solid fa-envelope footer__contact-item-icon"></i>
+            <a
+              href="mailto:Andrzejaugust2008@gmail.com"
+              class="footer__contact-item-link"
+              >Email</a
+            >
+          </li>
+          <li class="footer__contact-item">
+            <i class="fa-solid fa-phone footer__contact-item-icon"></i>
+            <a href="tel:+841800032551" class="footer__contact-item-link"
+              >Free call: 1800 032 551</a
+            >
+          </li>
+          <li class="footer__contact-item">
+            <i class="fa-solid fa-phone footer__contact-item-icon"></i>
+            <a href="tel:+84968537565" class="footer__contact-item-link"
+              >Phone: +84968537565</a
+            >
+          </li>
+        </ul>
+
+        <ul class="footer__contact-list">
+          <h4 class="footer__contact-heading">Follow us</h4>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link">
+              <i class="fa-brands fa-facebook footer__social-icon"></i>
+            </a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link">
+              <i class="fa-brands fa-twitter footer__social-icon"></i>
+            </a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link">
+              <i class="fa-brands fa-instagram footer__social-icon"></i>
+            </a>
+          </li>
+          <li class="footer__social">
+            <a href="#" class="footer__social-link">
+              <i class="fa-brands fa-youtube footer__social-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="footer__bottom">
+    <a href="#">
+      <img
+        src="./src/img/logo-header.png"
+        alt="Logo header"
+        class="header__logo"
+      />
+    </a>
+  </div>
+</footer>

@@ -1,0 +1,19 @@
+
+.hero {
+    position: relative;
+    background-image: url(../src/img/header-img.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    @include respond(tab-land) {
+        &__australia-video {
+            width: 100%;
+            height: 60rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

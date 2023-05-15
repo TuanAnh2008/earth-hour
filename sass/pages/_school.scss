@@ -1,0 +1,60 @@
+$images-path: "../src/img/";
+.hero {
+    position: relative;
+    background-image: url('../src/img/sub-bckg-1.jpg');
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    min-height: 35rem;
+}
+
+
+.content {
+    margin-top: 3rem;
+}
+
+.content__school {
+
+    &-education-list {
+
+    }
+
+    &-education-item {
+        margin: 0.7rem 0;
+        margin-left: 1.2rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: left;
+        color: $color-tertiary;
+        &::marker {
+                color: $color-secondary;
+        }
+    }
+
+    &-course-list {
+
+    }
+
+    &-course-item {
+        margin-left: 1.2rem;
+        font-size: 1.6rem;
+        &:not(:last-child) {
+            margin-bottom: 0.6rem;
+        }
+    }
+
+    &-course-link {
+        text-decoration: none;
+        color: $color-tertiary;
+        display: block;
+        margin: 1.5rem 0;
+        font-size: 1.5rem;
+        transition: $transition-1;
+        &:hover {
+            color: $color-tertiary-dark;
+        }
+    }
+
+
+}
+

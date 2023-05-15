@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "firstName": "admin",
+      "lastName": "LTA",
+      "email": "andrzejaugust2008@gmail.com",
+      "phone": 968537565,
+      "postcode": 10000,
+      "group": "Individual",
+      "id": 1
+    },
+    {
+      "firstName": "Tuan",
+      "lastName": "Comp",
+      "email": "tuancompany@gmail.com",
+      "phone": 1111111111,
+      "postcode": 10000,
+      "group": "Organisation",
+      "nameWork": "TuanComp",
+      "file": "blob:http://localhost:1234/77636b11-f53a-471a-8ceb-66a60b24a5f0",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "accId": 1,
+      "avtName": "AL",
+      "firstName": "admin",
+      "lastName": "LTA",
+      "content": "Tôi là người tạo ra trang web này:)",
+      "id": 1
+    },
+    {
+      "accId": 2,
+      "avtName": "TC",
+      "firstName": "Tuan",
+      "lastName": "Comp",
+      "content": "TuanComp đang tài trợ trang web này👋",
+      "id": 2
+    }
+  ]
+}
