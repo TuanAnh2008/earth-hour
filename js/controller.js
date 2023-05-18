@@ -1,4 +1,4 @@
-
+console.log('1')
 import 'core-js/stable';
 import 'regenerator-runtime';
 import { downloadImg , getItemsAPI, state, checkLogIn } from "./model.js";
