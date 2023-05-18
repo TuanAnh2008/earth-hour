@@ -46,6 +46,7 @@ export function addStyleToPage(path, sassTemplate) {
 
     case "/":
       document.querySelector("#css-style").innerHTML = sassTemplate.mainSass;
+      console.log(sassTemplate.mainSass);
       // document.querySelector('#css-link').href = sassTemplate.mainSass
       break;
 
