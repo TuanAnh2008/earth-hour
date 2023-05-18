@@ -6,7 +6,7 @@
     "watch:sass": "node-sass sass/loader.scss css/style11.css -w",
     "test": "echo \"Error: no test specified\" && exit 1",
     "devserver": "live-server --browser=Chrome",
-    "parcel:html": "parcel *.html --no-source-maps --no-cache  --dist-dir earth-hour-final"
+    "parcel:html": "parcel build *.html --no-source-maps --no-cache  --dist-dir earth-hour-final"
   },
   "author": "",
   "license": "ISC",
